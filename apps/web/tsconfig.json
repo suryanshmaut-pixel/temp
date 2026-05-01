@@ -21,6 +21,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@test-evals/shared": ["../../packages/shared/src/index.ts"],
       "@test-evals/ui/*": ["../../packages/ui/src/*"]
     }
   },

@@ -7,13 +7,17 @@
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
     "dev": "bun run --hot src/index.ts",
+    "test": "bun test src/**/*.test.ts",
     "start": "bun run dist/index.mjs"
   },
   "dependencies": {
     "@test-evals/auth": "workspace:*",
     "@test-evals/db": "workspace:*",
     "@test-evals/env": "workspace:*",
+    "@test-evals/llm": "workspace:*",
+    "@test-evals/shared": "workspace:*",
     "better-auth": "catalog:",
+    "drizzle-orm": "^0.45.1",
     "dotenv": "catalog:",
     "hono": "^4.8.2",
     "zod": "catalog:"
